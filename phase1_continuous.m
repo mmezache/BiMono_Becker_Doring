@@ -1,4 +1,3 @@
-% Numerical investigation 11.2022
 % Illustration of the bimonomeric pol/depol model
 % phase 1 Continuous approximation
 
@@ -124,50 +123,6 @@ for k=1:nframes
     movFrame(k) = getframe(figh);
     
 end
-
-%% Figures phase portrait and size distribution
-Ri = 30; % number of plot for each graph
-index_poincar_sec = [71 3827 50813 54577 54717];
-index_poincar_sec_2 = [54577 54646 54647 54717];
-toto1 = floor(linspace(index_poincar_sec(3), index_poincar_sec(4),Ri));
-figure1 = figure;
-cmap = jet(Ri);
-grid on
-for ie = 1:Ri
-    plot(xsize(1:250), size_distr(toto1(ie),1:250))
-    hold on
-end
-axis([0 250 0 max(max(size_distr(1,:)),max(size_distr(end,:)))])
-hcb = colorbar;
-set(gca,'colororder',cmap,'colormap',cmap)
-caxis([Tout(toto1(1)) Tout(toto1(end))])
-% set ticklabel length
-tl = split(sprintf('%.0f\n',hcb.Ticks));
-hcb.TickLabels = tl(1:end-1);
-% set cb title
-title(hcb,'Time')
-xlabel('size')
-%saveas(figure1, 'sd3.jpg')
-
-figure2 = figure;
-cmap = jet(Ri);
-
-for ie = 1:Ri
-    plot(v(toto1(ie)), w(toto1(ie)), 'o','LineWidth',3, 'MarkerSize',15)
-    hold on
-
-end
-hcb = colorbar;
-set(gca,'colororder',cmap,'colormap',cmap)
-caxis([Tout(toto1(1)) Tout(toto1(end))])
-% set ticklabel length
-tl = split(sprintf('%.0f\n',hcb.Ticks));
-hcb.TickLabels = tl(1:end-1);
-% set cb title
-title(hcb,'Time')
-plot(v,w,"k")
-xlabel('v')
-ylabel('w')
 
 %% Figure about the change of the shape of the size distribution
 index_shape = [27324 81970 136615 191261];
