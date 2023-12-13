@@ -16,5 +16,5 @@ The algorithms are based on :
 *  Runge-Kutta 8th order integration for the ODE system.
 
 # Running the tests
-Save all the files in a repository, select the repository when you set the path in Matlab. Either run the file "all_phases_discrete.m" for the ODE systemn or the file "phase1_continuous.m" for the PDE/ODE system.
+Save all the files in a repository and select the repository when you set the path in Matlab. Either run the file "all_phases_discrete.m" for the ODE system or the file "phase1_continuous.m" for the PDE/ODE system (it can take some time to run).
 The code returns a series of graphs and an animation of the evolution of the concentration of the monomers in the phase space, the evolution of the "energy" and the evolution of the size distribution of the clusters.
