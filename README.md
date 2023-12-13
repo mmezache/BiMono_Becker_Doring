@@ -12,8 +12,8 @@ The mathematical properties of the system are described in https://www.sciencedi
 
 # Numerical integration
 The algorithms are based on :
-  Finite difference method for the PDE-ODE system using the thomas algorithm (https://github.com/tamaskis/tridiagonal-MATLAB),
-  Runge-Kutta 8th order integration for the ODE system.
+*  Finite difference method for the PDE-ODE system using the thomas algorithm (https://github.com/tamaskis/tridiagonal-MATLAB),
+*  Runge-Kutta 8th order integration for the ODE system.
 
 # Running the tests
 Save all the files in a repository, select the repository when you set the path in Matlab. Either run the file "..." for the ODE systemn or the file "..." for the PDE/ODE system.
