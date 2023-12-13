@@ -8,11 +8,11 @@ Matlab
 This code is design to simulate a bi-monomeric Becker-Döring system. 
 The system is either a large Ordinary Differential Equations (ODE) system to simulate the evolution in time of the concentration of the clusters and the monomers.
 The system can be approximated by an advection-diffusion Partial Differential Equation (PDE) for the concentration of the clusters considering the size as a continuous variable coupled to two ODE for the cocentration of monomers.
-The mathematical properties of the system are described in https://www.sciencedirect.com/science/article/pii/S0022519319303194?casa_token=DCigPl-yfxQAAAAA:TjqSebXOEMsljjXYqvs2kri0VnzMaSxv6rZVdf3Xs41WxL9HeLp_YuLRpdXLiZseGqxMFyttaJGk and in PREPRINT.
+The mathematical properties of the system are described in [DFMR](https://www.sciencedirect.com/science/article/pii/S0022519319303194?casa_token=DCigPl-yfxQAAAAA:TjqSebXOEMsljjXYqvs2kri0VnzMaSxv6rZVdf3Xs41WxL9HeLp_YuLRpdXLiZseGqxMFyttaJGk) and in PREPRINT.
 
 # Numerical integration
 The algorithms are based on :
-*  Finite difference method for the PDE-ODE system using the thomas algorithm (https://github.com/tamaskis/tridiagonal-MATLAB),
+*  Finite difference method for the PDE-ODE system using the thomas algorithm [tridiagonal](https://github.com/tamaskis/tridiagonal-MATLAB),
 *  Runge-Kutta 8th order integration for the ODE system.
 
 # Running the tests
