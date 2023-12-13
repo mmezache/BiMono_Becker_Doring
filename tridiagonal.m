@@ -4,6 +4,7 @@
 % tridiagonal matrix algorithm (i.e. the Thomas algorithm).
 %
 %   x = tridiagonal(A,d)
+% Copyright © 2021 Tamas Kis
 %--------------------------------------------------------------------------
 %
 % ------
