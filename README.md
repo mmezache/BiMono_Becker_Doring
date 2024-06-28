@@ -2,7 +2,7 @@
 Simulation of the bi-monomeric Becker-Döring system
 
 # Prerequisite
-Matlab
+* Matlab and methods about curves intersections [InterX](https://fr.mathworks.com/matlabcentral/fileexchange/22441-curve-intersections).
 
 # Description
 This code is designed to simulate a bi-monomeric Becker-Döring system. 
